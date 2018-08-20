@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nam transport material:</strong>
+  <%= @transport_material.nam_transport_material %>
+</p>
+
+<p>
+  <strong>Desc transport material:</strong>
+  <%= @transport_material.desc_transport_material %>
+</p>
+
+<p>
+  <strong>Date transport material:</strong>
+  <%= @transport_material.date_transport_material %>
+</p>
+
+<p>
+  <strong>Id material:</strong>
+  <%= @transport_material.id_material %>
+</p>
+
+<p>
+  <strong>Id recycling center:</strong>
+  <%= @transport_material.id_recycling_center %>
+</p>
+
+<%= link_to 'Edit', edit_transport_material_path(@transport_material) %> |
+<%= link_to 'Back', transport_materials_path %>

@@ -1,0 +1,2 @@
+class TransportMaterial < ApplicationRecord
+end

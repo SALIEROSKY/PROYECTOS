@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nam recycling center:</strong>
+  <%= @recycling_center.nam_recycling_center %>
+</p>
+
+<p>
+  <strong>Desc recycling center:</strong>
+  <%= @recycling_center.desc_recycling_center %>
+</p>
+
+<p>
+  <strong>Address recycling center:</strong>
+  <%= @recycling_center.address_recycling_center %>
+</p>
+
+<p>
+  <strong>Tel recycling center:</strong>
+  <%= @recycling_center.tel_recycling_center %>
+</p>
+
+<p>
+  <strong>Web recycling center:</strong>
+  <%= @recycling_center.web_recycling_center %>
+</p>
+
+<%= link_to 'Edit', edit_recycling_center_path(@recycling_center) %> |
+<%= link_to 'Back', recycling_centers_path %>

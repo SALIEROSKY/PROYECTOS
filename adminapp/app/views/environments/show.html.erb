@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nam :</strong>
+  <%= @environment.nam_ %>
+</p>
+
+<p>
+  <strong>Environment:</strong>
+  <%= @environment.environment %>
+</p>
+
+<p>
+  <strong>Desc :</strong>
+  <%= @environment.desc_ %>
+</p>
+
+<p>
+  <strong>Environment:</strong>
+  <%= @environment.environment %>
+</p>
+
+<p>
+  <strong>Id multimedia:</strong>
+  <%= @environment.id_multimedia %>
+</p>
+
+<p>
+  <strong>Id user:</strong>
+  <%= @environment.id_user %>
+</p>
+
+<%= link_to 'Edit', edit_environment_path(@environment) %> |
+<%= link_to 'Back', environments_path %>

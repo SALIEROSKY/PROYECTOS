@@ -1,0 +1,37 @@
+<%= form_with(model: multimedium, local: true) do |form| %>
+  <% if multimedium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(multimedium.errors.count, "error") %> prohibited this multimedium from being saved:</h2>
+
+      <ul>
+      <% multimedium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nam_multimedia %>
+    <%= form.text_field :nam_multimedia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desc_multimedia %>
+    <%= form.text_field :desc_multimedia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_multimedia_type %>
+    <%= form.number_field :id_multimedia_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :multimedia_type_id %>
+    <%= form.text_field :multimedia_type_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Recycling Centers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nam recycling center</th>
+      <th>Desc recycling center</th>
+      <th>Address recycling center</th>
+      <th>Tel recycling center</th>
+      <th>Web recycling center</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recycling_centers.each do |recycling_center| %>
+      <tr>
+        <td><%= recycling_center.nam_recycling_center %></td>
+        <td><%= recycling_center.desc_recycling_center %></td>
+        <td><%= recycling_center.address_recycling_center %></td>
+        <td><%= recycling_center.tel_recycling_center %></td>
+        <td><%= recycling_center.web_recycling_center %></td>
+        <td><%= link_to 'Show', recycling_center %></td>
+        <td><%= link_to 'Edit', edit_recycling_center_path(recycling_center) %></td>
+        <td><%= link_to 'Destroy', recycling_center, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Recycling Center', new_recycling_center_path %>

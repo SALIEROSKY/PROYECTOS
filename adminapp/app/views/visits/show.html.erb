@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nam visit:</strong>
+  <%= @visit.nam_visit %>
+</p>
+
+<p>
+  <strong>Desc :</strong>
+  <%= @visit.desc_ %>
+</p>
+
+<p>
+  <strong>Visit:</strong>
+  <%= @visit.visit %>
+</p>
+
+<p>
+  <strong>Id recycling center:</strong>
+  <%= @visit.id_recycling_center %>
+</p>
+
+<p>
+  <strong>Id user:</strong>
+  <%= @visit.id_user %>
+</p>
+
+<%= link_to 'Edit', edit_visit_path(@visit) %> |
+<%= link_to 'Back', visits_path %>
