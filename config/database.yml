@@ -17,10 +17,11 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: proyectoR
+  Host: ec2-50-17-194-129.compute-1.amazonaws.com
+  database: dffbhenvhlk3rb
   pool: 5
-  username: postgres
-  password: 1234
+  username: snucjhvtapgejr
+  password: 0dc17335662fbddb7dd42187ac945c770360bf52c15326f9b492a3817ec1007b
 
 development:
   <<: *default
