@@ -1,2 +1,0 @@
-class MaterialType < ApplicationRecord
-end
